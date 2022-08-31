@@ -3,23 +3,136 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
           integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-          <!doctype html>
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js" defer></script>
     <title>Laur Bocse</title>
 </head>
 <body>
-    <div class="bg-gray-100 relative flex flex-col justify-center items-center h-screen w-full">
-        <div class="absolute bottom-1/2 right-1/2 translate-x-1/2 translate-y-1/2 bg-gray-300 w-full max-w-[950px] h-3/5 rounded-tl-full rounded-bl-[2000px] rounded-br-[8000px] rounded-tr-[6000px]"></div>
-        <div class="animate-pulse text-center space-y-5">
-            <i class="fa-solid fa-clock fa-4x"></i>
-            <div class="space-y-2">
-                <h1 class="text-4xl font-bold uppercase">Hello world</h1>
-                <div class="text-gray-600 text-xl font-semibold">Coming soon</div>
+    <header class="h-[550px] relative">
+        <div class="fixed w-full px-20 py-10 flex justify-between items-center text-white z-20">
+            <div class="font-bold text-lg">Laur<span class="text-yellow-500">Bocse</span></div>
+            <div class="hidden lg:flex items-center gap-8">
+                <div>Home</div>
+                <div>About me</div>
+                <div>Experience</div>
+                <div>Education</div>
+                <div>Contact</div>
+            </div>
+            <div class="text-xl lg:hidden">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-    </div>
+        <div class="header-content h-full relative">
+            <div class="absolute top-0 left-0 bg-black/70 w-full h-full"></div>
+            <div class="h-full px-20 flex flex-col justify-center items-center relative z-10 text-white space-y-8">
+                <div class="space-y-2 text-center">
+                    <div class="text-white font-light uppercase text-sm">Welcome</div>
+                    <div class="font-bold text-4xl">
+                        <div>I'm <span class="dynamic-text text-yellow-500"></span></div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" title="" class="border border-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500">
+                        <i class="fa-solid fa-address-book"></i> Contact me 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-3 left-1/2 -translate-x-1/2 z-10">
+            <a href="" title="" class="w-7 h-7 border rounded-full flex justify-center items-center text-white animate-bounce">
+                <i class="fa-solid fa-angle-down"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="bg-zinc-800 w-full p-20">
+        <div class="max-w-[800px] mx-auto space-y-10">
+            <div class="text-center relative">
+                <div class="text-7xl xl:text-8xl uppercase text-zinc-700">About me</div>
+                <div class="text-underline absolute top-[30%] left-1/2 -translate-x-1/2 w-full h-full text-white font-bold text-2xl">Know Me More</div>
+            </div>
+            <div class="space-y-4 text-white">
+                <div class="text-xl">I'm a <b>software developer</b></div>
+                <div class="space-y-1">
+                    <div>I am very passionate about this subject and I like to learn as many new things as possible. I like challenges and the satisfaction they give me when I manage to solve them.</div>
+                    <div>Perseverance is one of the qualities that define me.</div>
+                </div>
+                <div>
+                    <a href="" title="" class="bg-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500/80">
+                        Download CV <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="space-y-5">
+                <div class="text-2xl font-bold text-white">My Skills</div>
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="space-y-1 w-[380px]">
+                            <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                <div>HTML/CSS</div>
+                                <div>95%</div>
+                            </div>
+                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[95%]"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1 w-[380px]">
+                            <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                <div>Tailwind</div>
+                                <div>95%</div>
+                            </div>
+                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[95%]"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1 w-[380px]">
+                            <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                <div>Javascript</div>
+                                <div>40%</div>
+                            </div>
+                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[40%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="space-y-1 w-[380px]">
+                            <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                <div>React</div>
+                                <div>35%</div>
+                            </div>
+                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[35%]"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1 w-[380px]">
+                            <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                <div>Laravel</div>
+                                <div>70%</div>
+                            </div>
+                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[70%]"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1 w-[380px]">
+                            <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                <div>Docker</div>
+                                <div>20%</div>
+                            </div>
+                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[20%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

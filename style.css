@@ -1,0 +1,33 @@
+* {
+    font-family: Nunito;
+}
+
+.header-content {
+    background-image: url('images/header.jpg');
+    background-size: cover;
+}
+
+.text-underline {
+    position: relative;
+}
+
+.text-underline::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100%;
+    border-bottom: 2px solid #eab308;
+    bottom: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.percentage {
+    animation: progress 1500ms ease-in 1;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
