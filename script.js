@@ -39,11 +39,36 @@ document.addEventListener('DOMContentLoaded', () => {
         markers: false
     };
 
-    gsap.from('#about_section', {
+    gsap.from('#about_description', {
         duration: 1,
         autoAlpha: 0,
         x: -150,
         stagger: 0.4,
         scrollTrigger: aboutSection
+    });
+
+    const aboutSectionSkills = {
+        trigger: '#section_about-skills',
+        start: 'top 70%',
+        end: '20% 80%',
+        scrub: false,
+        markers: false,
+    };
+
+    gsap.from('#about_skills-content', {
+        duration: 1,
+        autoAlpha: 0,
+        x: -150,
+        stagger: 0.4,
+        scrollTrigger: aboutSectionSkills
+    });
+
+    gsap.from('#percentage', {
+        delay: 1,
+        duration: 1.5,
+        autoAlpha: 0,
+        width: 0,
+        stagger: 0.4,
+        scrollTrigger: aboutSectionSkills
     });
 });

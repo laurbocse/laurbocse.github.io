@@ -45,96 +45,100 @@
                 </div>
             </div>
         </div>
-        <div id="header_socials">
-            <div class="absolute bottom-3 left-[49%] -translate-x-1/2">
-                <a href="" title="" class="w-10 h-10 border rounded-full flex justify-center items-center text-white text-2xl animate-bounce">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-            <div class="absolute bottom-3 left-[51%] -translate-x-1/2">
-                <a href="" title="" class="w-10 h-10 border rounded-full flex justify-center items-center text-white text-2xl animate-bounce">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
+        <div id="header_socials" class="relative z-20">
+            <div class="absolute bottom-3 left-[50%] -translate-x-1/2">
+                <div class="flex gap-3">
+                    <a href="https://github.com/laurbocse" title="GitHub" class="w-10 h-10 border rounded-full flex justify-center items-center text-white text-2xl animate-bounce">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/laurbocse" title="LinkedIn" class="w-10 h-10 border rounded-full flex justify-center items-center text-white text-2xl animate-bounce">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <section id="section_about" class="bg-zinc-800 w-full p-10 md:p-20">
-        <div id="about_section" class="max-w-[900px] mx-auto space-y-10 overflow-hidden">
-            <div class="text-center relative">
-                <div class="text-5xl lg:text-7xl xl:text-8xl uppercase text-zinc-700 select-none">About me</div>
-                <div class="text-underline absolute top-[30%] left-1/2 -translate-x-1/2 w-full h-full text-white font-bold text-2xl">Know Me More</div>
-            </div>
-            <div class="space-y-4 text-white">
-                <div class="text-lg md:text-xl">I'm a <b>software developer</b></div>
-                <div class="text-sm md:text-base space-y-1">
-                    <div>I am very passionate about this subject and I like to learn as many new things as possible. I like challenges and the satisfaction they give me when I manage to solve them.</div>
-                    <div>Perseverance is one of the qualities that define me.</div>
+        <div class="max-w-[900px] mx-auto space-y-10 overflow-hidden">
+            <div id="about_description">
+                <div class="text-center relative">
+                    <div class="text-5xl lg:text-7xl xl:text-8xl uppercase text-zinc-700 select-none">About me</div>
+                    <div class="text-underline absolute top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 text-white font-bold text-2xl">Know Me More</div>
                 </div>
-                <div>
-                    <a href="" title="" class="bg-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500/80">
-                        Download CV <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="space-y-5">
-                <div class="text-xl font-bold text-white">My Skills</div>
-                <div class="grid lg:grid-cols-2 gap-4">
-                    <div class="space-y-4">
-                        <div class="space-y-1 max-w-[430px]">
-                            <div class="text-white text-sm font-semibold flex justify-between items-center">
-                                <div>HTML/CSS</div>
-                                <div>95%</div>
-                            </div>
-                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
-                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[95%]"></div>
-                            </div>
-                        </div>
-                        <div class="space-y-1 max-w-[430px]">
-                            <div class="text-white text-sm font-semibold flex justify-between items-center">
-                                <div>Tailwind</div>
-                                <div>95%</div>
-                            </div>
-                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
-                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[95%]"></div>
-                            </div>
-                        </div>
-                        <div class="space-y-1 max-w-[430px]">
-                            <div class="text-white text-sm font-semibold flex justify-between items-center">
-                                <div>Javascript</div>
-                                <div>40%</div>
-                            </div>
-                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
-                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[40%]"></div>
-                            </div>
-                        </div>
+                <div class="space-y-4 text-white mt-10">
+                    <div class="text-lg md:text-xl">I'm a <b>software developer</b></div>
+                    <div class="text-sm md:text-base space-y-1">
+                        <div>I am very passionate about this subject and I like to learn as many new things as possible. I like challenges and the satisfaction they give me when I manage to solve them.</div>
+                        <div>Perseverance is one of the qualities that define me.</div>
                     </div>
-                    <div class="space-y-4">
-                        <div class="space-y-1 max-w-[430px]">
-                            <div class="text-white text-sm font-semibold flex justify-between items-center">
-                                <div>React</div>
-                                <div>35%</div>
+                    <div>
+                        <a href="" title="" class="bg-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500/80">
+                            Download CV <i class="fa-solid fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section_about-skills">
+                <div id="about_skills-content" class="space-y-5">
+                    <div class="text-xl font-bold text-white">My Skills</div>
+                    <div class="grid lg:grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="space-y-1 max-w-[430px]">
+                                <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                    <div>HTML/CSS</div>
+                                    <div>95%</div>
+                                </div>
+                                <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                    <div id="percentage" class="bg-yellow-500 rounded-lg h-full w-[95%]"></div>
+                                </div>
                             </div>
-                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
-                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[35%]"></div>
+                            <div class="space-y-1 max-w-[430px]">
+                                <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                    <div>Tailwind</div>
+                                    <div>95%</div>
+                                </div>
+                                <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                    <div id="percentage" class="bg-yellow-500 rounded-lg h-full w-[95%]"></div>
+                                </div>
+                            </div>
+                            <div class="space-y-1 max-w-[430px]">
+                                <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                    <div>Javascript</div>
+                                    <div>40%</div>
+                                </div>
+                                <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                    <div id="percentage" class="bg-yellow-500 rounded-lg h-full w-[40%]"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="space-y-1 max-w-[430px]">
-                            <div class="text-white text-sm font-semibold flex justify-between items-center">
-                                <div>Laravel</div>
-                                <div>70%</div>
+                        <div class="space-y-4">
+                            <div class="space-y-1 max-w-[430px]">
+                                <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                    <div>React</div>
+                                    <div>35%</div>
+                                </div>
+                                <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                    <div id="percentage" class="bg-yellow-500 rounded-lg h-full w-[35%]"></div>
+                                </div>
                             </div>
-                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
-                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[70%]"></div>
+                            <div class="space-y-1 max-w-[430px]">
+                                <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                    <div>Laravel</div>
+                                    <div>70%</div>
+                                </div>
+                                <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                    <div id="percentage" class="bg-yellow-500 rounded-lg h-full w-[70%]"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="space-y-1 max-w-[430px]">
-                            <div class="text-white text-sm font-semibold flex justify-between items-center">
-                                <div>Docker</div>
-                                <div>20%</div>
-                            </div>
-                            <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
-                                <div class="percentage bg-yellow-500 rounded-lg h-full w-[20%]"></div>
+                            <div class="space-y-1 max-w-[430px]">
+                                <div class="text-white text-sm font-semibold flex justify-between items-center">
+                                    <div>Docker</div>
+                                    <div>20%</div>
+                                </div>
+                                <div class="h-4 bg-zinc-700 rounded-lg shadow-md">
+                                    <div id="percentage" class="bg-yellow-500 rounded-lg h-full w-[20%]"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

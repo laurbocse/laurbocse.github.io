@@ -29,17 +29,7 @@
     width: 100px;
     height: 100%;
     border-bottom: 2px solid #eab308;
-    bottom: 55%;
+    top: 3%;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.percentage {
-    animation: progress 1500ms ease-in 1;
-}
-
-@keyframes progress {
-    from {
-        width: 0;
-    }
 }
