@@ -124,4 +124,54 @@ document.addEventListener('DOMContentLoaded', () => {
         stagger: 0.4,
         scrollTrigger: aboutSectionSkills
     });
+
+    const resumeSection = {
+        trigger: '#section_resume',
+        start: 'top 70%',
+        end: '20% 80%',
+        scrub: false,
+        markers: false
+    };
+
+    gsap.from('#resume_title', {
+        duration: 1,
+        autoAlpha: 0,
+        y: -50,
+        stagger: 0.4,
+        scrollTrigger: resumeSection
+    });
+
+    gsap.from('#resume_experience', {
+        delay: 0.5,
+        duration: 1,
+        autoAlpha: 0,
+        x: -150,
+        stagger: 0.4,
+        scrollTrigger: resumeSection
+    });
+
+    gsap.from('#resume_education', {
+        delay: 1.5,
+        duration: 1,
+        autoAlpha: 0,
+        x: 150,
+        stagger: 0.4,
+        scrollTrigger: resumeSection
+    });
+
+    const resumeGithub = {
+        trigger: '#resume_github',
+        start: 'top 70%',
+        end: '20% 80%',
+        scrub: false,
+        markers: false
+    };
+
+    gsap.from('#resume_github', {
+        duration: 1,
+        autoAlpha: 0,
+        y: 150,
+        stagger: 0.4,
+        scrollTrigger: resumeGithub
+    });
 });

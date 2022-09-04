@@ -27,13 +27,10 @@
                     <a href="#about">About me</a>
                 </li>
                 <li>
-                    <a href="#">Experience</a>
+                    <a href="#resume">Resume</a>
                 </li>
                 <li>
-                    <a href="#">Education</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
             <div id="open-mobile-menu" class="text-xl lg:hidden cursor-pointer">
@@ -54,13 +51,10 @@
                             <a href="#about"><i class="fa-solid fa-address-card"></i> About me</a>
                         </li>
                         <li id="menu-link">
-                            <a href="#"><i class="fa-solid fa-laptop-code"></i> Experience</a>
+                            <a href="#resume"><i class="fa-solid fa-user"></i> Resume</a>
                         </li>
                         <li id="menu-link">
-                            <a href="#"><i class="fa-solid fa-school"></i> Education</a>
-                        </li>
-                        <li id="menu-link">
-                            <a href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
+                            <a href="#contact"><i class="fa-solid fa-address-book"></i> Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -75,7 +69,7 @@
                     </div>
                 </div>
                 <div id="header_button">
-                    <a href="#" title="" class="border border-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500">
+                    <a href="#contact" title="Contact Me" class="border border-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500">
                         <i class="fa-solid fa-address-book"></i> Contact me 
                     </a>
                 </div>
@@ -182,5 +176,57 @@
             </div>
         </div>
     </section>
+
+    <section id="resume" class="bg-zinc-700 w-full p-10 md:p-20">
+        <div id="section_resume" class="max-w-[1400px] mx-auto space-y-10 overflow-hidden">
+            <div id="resume_title" class="text-center relative">
+                <div class="text-5xl lg:text-7xl xl:text-8xl uppercase text-zinc-800 select-none">Summary</div>
+                <div class="text-underline absolute w-full top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 text-white font-bold text-2xl">Resume</div>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div id="resume_experience" class="space-y-6">
+                    <div class="text-white text-lg md:text-xl font-semibold"><i class="fa-solid fa-laptop-code"></i> Experience</div>
+                    <div class="bg-zinc-600 shadow-md rounded p-8 text-white border-l-8 border-l-yellow-500 space-y-3">
+                        <span class="text-xs font-bold bg-yellow-500 shadow-md p-2 rounded">July 2021 - Present</span>
+                        <div class="md:text-lg text-yellow-500 font-semibold">GSD SOFTWARE</div>
+                        <div class="text-sm font-semibold"><b>Full-stack Developer</b> (HTML, CSS, Tailwind/Bootstrap, JS, Vue.js, React, Laravel, Docker)</div>
+                    </div>
+                </div>
+                <div id="resume_education" class="space-y-6">
+                    <div class="text-white text-lg md:text-xl font-semibold"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+                    <div class="bg-zinc-600 shadow-md rounded p-8 text-white border-l-8 border-l-yellow-500 space-y-3">
+                        <span class="text-xs font-bold bg-yellow-500 shadow-md p-2 rounded">2022</span>
+                        <div class="md:text-lg text-yellow-500 font-semibold">Bachelor Degree</div>
+                        <div class="text-sm font-semibold">ULBS - College of Engineering</div>
+                    </div>
+                    <div class="bg-zinc-600 shadow-md rounded p-8 text-white border-l-8 border-l-yellow-500 space-y-3">
+                        <span class="text-xs font-bold bg-yellow-500 shadow-md p-2 rounded">2018 - 2022</span>
+                        <div class="md:text-lg text-yellow-500 font-semibold">ULBS - College of Engineering</div>
+                        <div class="text-sm font-semibold">Specialization: <b>Information Technology</b></div>
+                    </div>
+                </div>
+            </div>
+            <div id="resume_github">
+                <div class="space-y-6">
+                    <div class="text-white text-lg md:text-xl font-semibold"><i class="fa-brands fa-github"></i> Github Activity</div>
+                    <img src="https://ghchart.rshah.org/laurbocse" alt="" class="w-full select-none pointer-events-none" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-zinc-800 w-full p-10 md:p-20">
+        <div id="section_contact" class="max-w-[900px] mx-auto space-y-10 overflow-hidden">
+            <div id="contact_title" class="text-center relative">
+                <div class="text-5xl lg:text-7xl xl:text-8xl uppercase text-zinc-700 select-none">Contact</div>
+                <div class="text-underline absolute w-full top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 text-white font-bold text-2xl">Get in Tounch</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-600 flex flex-col justify-center items-center p-10 text-white">
+        <div class="text-center text-sm font-semibold">All Rights Reserved. Developed in <span class="font-bold text-yellow-500">2022</span> by</div>
+        <div class="text-lg font-bold">Laur<span class="text-yellow-500">Bocse</span></div>
+    </footer>
 </body>
 </html>
