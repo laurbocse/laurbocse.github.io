@@ -1,5 +1,58 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const mobileMenu = document.querySelector('#mobile-menu');
+    const openMobileMenuBtn = document.querySelector('#open-mobile-menu');
+    const closeMobileMenuBtn = document.querySelector('#close-mobile-menu');
+    
+    if (!mobileMenu || !openMobileMenuBtn || !closeMobileMenuBtn) {
+        return;
+    }
+
+    const mobileMenuWrapper = document.querySelector(
+        '#mobile-menu-wrapper'
+    );
+    
+    const menuLinks = document.querySelectorAll('#menu-link');
+
+    openMobileMenuBtn.addEventListener('click', function () {
+        gsap.to(mobileMenu, {
+            autoAlpha: 1
+        });
+
+        gsap.to(mobileMenuWrapper, {
+            x: 0
+        });
+
+        gsap.from('#menu-link', {
+            delay: 0.3,
+            duration: 0.5,
+            x: 250,
+            stagger: 0.4,
+        });
+    });
+
+    closeMobileMenuBtn.addEventListener('click', function () {
+        gsap.to(mobileMenu, {
+            autoAlpha: 0
+        });
+
+        gsap.to(mobileMenuWrapper, {
+            x: 100
+        });
+    });
+
+    for (let i = 0; i < menuLinks.length; i++) {
+        menuLinks[i].addEventListener("click", function () {
+            gsap.to(mobileMenu, {
+                autoAlpha: 0
+            });
+
+            gsap.to(mobileMenuWrapper, {
+                x: 100
+            });
+        });
+    }
+
     new Typewriter('.dynamic-text', {
         strings: ['<span class="text-yellow-500">Laur Bocse.</span>', 'a <span class="text-yellow-500">Software Developer.</span>'],
         autoStart: true,

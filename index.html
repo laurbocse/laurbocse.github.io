@@ -16,20 +16,56 @@
     <title>Laur Bocse</title>
 </head>
 <body>
-    <header class="h-[550px] relative overflow-hidden">
+    <header id="header" class="h-[550px] relative overflow-hidden">
         <div class="absolute w-full px-10 md:px-20 py-10 flex justify-between items-center text-white z-20">
             <div class="font-bold text-lg">Laur<span class="text-yellow-500">Bocse</span></div>
-            <div class="hidden lg:flex items-center gap-8">
-                <div>Home</div>
-                <div>About me</div>
-                <div>Experience</div>
-                <div>Education</div>
-                <div>Contact</div>
-            </div>
-            <div class="text-xl lg:hidden">
+            <ul class="hidden lg:flex items-center gap-8">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About me</a>
+                </li>
+                <li>
+                    <a href="#">Experience</a>
+                </li>
+                <li>
+                    <a href="#">Education</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div id="open-mobile-menu" class="text-xl lg:hidden cursor-pointer">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
+        <aside id="mobile-menu" class="invisible fixed top-0 left-0 z-50 h-full w-full bg-black/50 opacity-0 lg:hidden">
+            <div id="mobile-menu-wrapper" class="absolute top-0 right-0 z-10 h-full w-full max-w-[350px] bg-yellow-500 p-10 text-white space-y-12">
+                <div id="close-mobile-menu" class="text-xl lg:hidden text-end cursor-pointer">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="flex flex-col items-center">
+                    <ul class="space-y-8 text-lg">
+                        <li id="menu-link">
+                            <a href="#header"><i class="fa-solid fa-house"></i> Home</a>
+                        </li>
+                        <li id="menu-link">
+                            <a href="#about"><i class="fa-solid fa-address-card"></i> About me</a>
+                        </li>
+                        <li id="menu-link">
+                            <a href="#"><i class="fa-solid fa-laptop-code"></i> Experience</a>
+                        </li>
+                        <li id="menu-link">
+                            <a href="#"><i class="fa-solid fa-school"></i> Education</a>
+                        </li>
+                        <li id="menu-link">
+                            <a href="#"><i class="fa-solid fa-address-book"></i> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
         <div class="header-content h-full relative">
             <div class="h-full px-10 md:px-20 flex flex-col justify-center items-center relative z-10 text-white space-y-8">
                 <div class="space-y-2 text-center">
@@ -59,8 +95,8 @@
         </div>
     </header>
 
-    <section id="section_about" class="bg-zinc-800 w-full p-10 md:p-20">
-        <div class="max-w-[900px] mx-auto space-y-10 overflow-hidden">
+    <section id="about" class="bg-zinc-800 w-full p-10 md:p-20">
+        <div id="section_about" class="max-w-[900px] mx-auto space-y-10 overflow-hidden">
             <div id="about_description">
                 <div class="text-center relative">
                     <div class="text-5xl lg:text-7xl xl:text-8xl uppercase text-zinc-700 select-none">About me</div>
