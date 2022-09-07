@@ -103,7 +103,7 @@
                         <div>Perseverance is one of the qualities that define me.</div>
                     </div>
                     <div>
-                        <a href="" title="" class="bg-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500/80">
+                        <a href="" title="Download CV" class="bg-yellow-500 px-4 py-2 rounded transition duration-300 ease-in hover:bg-yellow-500/80">
                             Download CV <i class="fa-solid fa-download"></i>
                         </a>
                     </div>
@@ -201,7 +201,7 @@
                     </div>
                     <div class="bg-zinc-600 shadow-md rounded p-8 text-white border-l-8 border-l-yellow-500 space-y-3">
                         <span class="text-xs font-bold bg-yellow-500 shadow-md p-2 rounded">2018 - 2022</span>
-                        <div class="md:text-lg text-yellow-500 font-semibold">ULBS - College of Engineering</div>
+                        <div class="md:text-lg text-yellow-500 font-semibold">ULBS - Faculty of Engineering</div>
                         <div class="text-sm font-semibold">Specialization: <b>Information Technology</b></div>
                     </div>
                 </div>
@@ -221,10 +221,38 @@
                 <div class="text-5xl lg:text-7xl xl:text-8xl uppercase text-zinc-700 select-none">Contact</div>
                 <div class="text-underline absolute w-full top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 text-white font-bold text-2xl">Get in Tounch</div>
             </div>
+            <div class="flex flex-col lg:flex-row gap-8">
+                <form action="" method="POST" class="mx-auto flex-1 space-y-4 flex flex-col justify-center items-center w-full max-w-[600px]">
+                    <div class="w-full flex flex-col md:flex-row gap-4">
+                        <div class="w-full flex flex-col gap-2">
+                            <label for="name" class="text-yellow-500 text-sm font-semibold">Name</label>
+                            <input type="text" name="name" id="name" class="p-3 bg-transparent border border-white rounded text-white focus:outline-none focus:border-yellow-500 duration-300 transition ease-in" required>
+                        </div>
+                        <div class="w-full flex flex-col gap-2">
+                            <label for="email" class="text-yellow-500 text-sm font-semibold">Email</label>
+                            <input type="text" name="email" id="email" class="p-3 bg-transparent border border-white rounded text-white focus:outline-none focus:border-yellow-500 duration-300 transition ease-in" required>
+                        </div>
+                    </div>
+                    <div class="w-full flex flex-col gap-2">
+                        <label for="message" class="text-yellow-500 text-sm font-semibold">Message</label>
+                        <textarea name="message" id="message" class="p-3 bg-transparent border border-white rounded text-white focus:outline-none focus:border-yellow-500 duration-300 transition ease-in" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-yellow-500 text-white rounded px-6 py-2 hover:bg-yellow-500/80 duration-300 transition ease-in font-bold uppercase">Submit</button>
+                </form>
+                <div class="space-y-4">
+                    <div class="text-center font-semibold text-xl text-yellow-500 uppercase">Follow me</div>
+                    <div class="flex flex-row lg:flex-col justify-center items-center gap-10 lg:gap-5 text-white">
+                        <div><i class="fa-brands fa-github fa-2x"></i></div>
+                        <div><i class="fa-brands fa-linkedin fa-2x"></i></div>
+                        <div><i class="fa-brands fa-square-instagram fa-2x"></i></div>
+                        <div><i class="fa-brands fa-facebook fa-2x"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-zinc-600 flex flex-col justify-center items-center p-10 text-white">
+    <footer class="bg-zinc-700 flex flex-col justify-center items-center p-10 text-white">
         <div class="text-center text-sm font-semibold">All Rights Reserved. Developed in <span class="font-bold text-yellow-500">2022</span> by</div>
         <div class="text-lg font-bold">Laur<span class="text-yellow-500">Bocse</span></div>
     </footer>
