@@ -174,4 +174,38 @@ document.addEventListener('DOMContentLoaded', () => {
         stagger: 0.4,
         scrollTrigger: resumeGithub
     });
+
+    const contactSection = {
+        trigger: '#section_contact',
+        start: 'top 70%',
+        end: '20% 80%',
+        scrub: false,
+        markers: false
+    };
+
+    gsap.from('#contact_title', {
+        duration: 1,
+        autoAlpha: 0,
+        y: -50,
+        stagger: 0.4,
+        scrollTrigger: contactSection
+    });
+
+    gsap.from('#contact_form', {
+        delay: 0.5,
+        duration: 1,
+        autoAlpha: 0,
+        x: -150,
+        stagger: 0.4,
+        scrollTrigger: contactSection
+    });
+
+    gsap.from('#contact_socials', {
+        delay: 1,
+        duration: 1,
+        autoAlpha: 0,
+        x: 150,
+        stagger: 0.4,
+        scrollTrigger: contactSection
+    });
 });
